@@ -1,0 +1,12 @@
+@hostname = 127.0.0.1
+@port = 8001
+
+
+
+###
+POST http://{{ hostname }}:{{ port }}/api/v1/webhooks/order/
+Content-Type: application/json
+
+{
+    "teste": "testttttt"
+}
