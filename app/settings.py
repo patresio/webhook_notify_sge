@@ -122,3 +122,16 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+CALLMEBOT_API_URL = config("CALLMEBOT_API_URL")
+CALLMEBOT_PHONE_NUMBER = config("CALLMEBOT_PHONE_NUMBER")
+CALLMEBOT_API_KEY = config("CALLMEBOT_API_KEY")
+
+EMAIL_HOST = config("EMAIL_HOST")
+EMAIL_PORT = config("EMAIL_PORT")
+EMAIL_HOST_USER = config("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD")
+EMAIL_USE_TLS = config("EMAIL_USE_TLS", cast=bool)
+EMAIL_USE_SSL = config("EMAIL_USE_SSL", cast=bool)
+EMAIL_ADMIN_RECEIVER = config("EMAIL_ADMIN_RECEIVER")

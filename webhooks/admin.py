@@ -8,8 +8,8 @@ from webhooks.models import Webhook
 class WebhookAdmin(admin.ModelAdmin):
     list_display = (
         "id",
+        "system",
         "event_type",
-        "event",
         "created_at",
         "updated_at",
     )
